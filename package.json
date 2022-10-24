@@ -1,0 +1,36 @@
+{
+  "name": "oce-nextjs-blog-sample",
+  "version": "22.4.2",
+  "description": "A simple blog site built using Next.js and Oracle Content Management.",
+  "author": "Oracle America, Inc.",
+  "license": "UPL-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oracle-samples/oce-nextjs-blog-sample.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "buildPath": "cross-env BASE_URL=/samples/oce-nextjs-blog-sample next build",
+    "startPath": "cross-env BASE_URL=/samples/oce-nextjs-blog-sample next start",
+    "lint": "eslint next.config.js ./components ./pages ./scripts --ext .js,.jsx"
+  },
+  "dependencies": {
+    "@oracle/content-management-sdk": "^1.4.0",
+    "cross-env": "~7.0.2",
+    "https-proxy-agent": "~5.0.0",
+    "next": "~11.1.2",
+    "node-fetch": "~2.6.1",
+    "prop-types": "~15.7.2",
+    "react": "~17.0.1",
+    "react-dom": "~17.0.1",
+    "xss": "~1.0.8"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "~12.0.4",
+    "eslint": "~7.32.0",
+    "eslint-config-airbnb": "~19.0.1",
+    "eslint-plugin-header": "~3.1.1"
+  }
+}
